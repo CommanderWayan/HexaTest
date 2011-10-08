@@ -1,0 +1,24 @@
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\bin\x86\Debug\HexaTest.exe
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\bin\x86\Debug\HexaTest.pdb
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\obj\x86\Debug\HexaTest.exe
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\obj\x86\Debug\HexaTest.pdb
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame.xnb
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame60.xnb
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicsand.xnb
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrass.xnb
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrassdry.xnb
+C:\Dokumente und Einstellungen\nils\Eigene Dateien\Visual Studio 2008\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame.xnb
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame60.xnb
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicsand.xnb
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrass.xnb
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrassdry.xnb
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\HexaTest.exe
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\HexaTest.pdb
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\obj\x86\Debug\HexaTest.exe
+D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\obj\x86\Debug\HexaTest.pdb

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>cursor\cursor_frame.png</Source>
+      <Name>cursor\cursor_frame</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame.xnb</Output>
+      <Time>2011-10-06T09:30:02+02:00</Time>
+    </Item>
+    <Item>
+      <Source>cursor\cursor_frame60.png</Source>
+      <Name>cursor\cursor_frame60</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame60.xnb</Output>
+      <Time>2011-10-06T10:25:52+02:00</Time>
+    </Item>
+    <Item>
+      <Source>ground\basicsand.png</Source>
+      <Name>ground\basicsand</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicsand.xnb</Output>
+      <Time>2011-10-06T17:36:50+02:00</Time>
+    </Item>
+    <Item>
+      <Source>ground\basicgrass.png</Source>
+      <Name>ground\basicgrass</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrass.xnb</Output>
+      <Time>2011-10-07T10:10:00+02:00</Time>
+    </Item>
+    <Item>
+      <Source>ground\basicgrassdry.png</Source>
+      <Name>ground\basicgrassdry</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrassdry.xnb</Output>
+      <Time>2011-10-07T10:12:02+02:00</Time>
+    </Item>
+    <Item>
+      <Source>cursor\cursor_normal.png</Source>
+      <Name>cursor\cursor_normal</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb</Output>
+      <Time>2011-10-07T11:34:18+02:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\Content\</RootDirectory>
+      <LoggerRootDirectory>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18+02:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2011-10-08T15:33:27.9532533+02:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

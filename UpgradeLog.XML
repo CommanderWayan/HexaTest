@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="HexaTest">
+</Property><Property Name="Projektmappendatei" Value="D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest.sln">
+</Property><Property Name="Date" Value="Samstag, 8. Oktober 2011">
+</Property><Property Name="Time" Value="15:40">
+</Property><Property Name="Solution" Value="HexaTest">
+</Property><Property Name="Projektmappendatei" Value="D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest.sln">
+</Property><Property Name="Date" Value="Samstag, 8. Oktober 2011">
+</Property><Property Name="Time" Value="15:40:17">
+</Property></Properties><Event ErrorLevel="0" Project="HexaTest" Source="HexaTest\HexaTest.csproj" Description="Upgraded XNA Game Studio project to XNA Framework 4.0.">
+</Event><Event ErrorLevel="0" Project="HexaTest" Source="HexaTest\HexaTest.csproj" Description="Projekt erfolgreich konvertiert">
+</Event><Event ErrorLevel="3" Project="HexaTest" Source="HexaTest\HexaTest.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="HexaTest.sln" Description="Die Projektmappe wurde erfolgreich konvertiert.">
+</Event><Event ErrorLevel="3" Project="" Source="HexaTest.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="HexaTest" Source="HexaTest\HexaTest.csproj" Description="Überprüfung abgeschlossen: Upgrade der Projektdateien nicht erforderlich.">
+</Event><Event ErrorLevel="0" Project="HexaTest" Source="HexaTest\HexaTest.csproj" Description="Upgraded XNA Framework references to XNA Framework 4.0.">
+</Event><Event ErrorLevel="0" Project="HexaTestContent" Source="HexaTest\Content\HexaTestContent.contentproj" Description="Upgraded XNA Game Studio nested content projects to XNA Framework 4.0 and promoted to sibling project.">
+</Event></UpgradeLog>
