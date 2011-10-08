@@ -22,3 +22,15 @@ D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\obj\x86\D
 D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\obj\x86\Debug\HexaTest.exe
 D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\obj\x86\Debug\HexaTest.pdb
+J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame.xnb
+J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame60.xnb
+J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicsand.xnb
+J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrass.xnb
+J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrassdry.xnb
+J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb
+J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\HexaTest.exe
+J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\HexaTest.pdb
+J:\GitRepo\HexaTest\HexaTest\obj\x86\Debug\ResolveAssemblyReference.cache
+J:\GitRepo\HexaTest\HexaTest\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+J:\GitRepo\HexaTest\HexaTest\obj\x86\Debug\HexaTest.exe
+J:\GitRepo\HexaTest\HexaTest\obj\x86\Debug\HexaTest.pdb

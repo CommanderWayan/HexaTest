@@ -116,6 +116,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="helpers.cs" />
     <Compile Include="playfield\hexfield.cs" />
     <Compile Include="playfield\playfield.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

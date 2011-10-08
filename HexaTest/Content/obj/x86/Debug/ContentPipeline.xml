@@ -7,7 +7,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame.xnb</Output>
+      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame.xnb</Output>
       <Time>2011-10-06T09:30:02+02:00</Time>
     </Item>
     <Item>
@@ -16,7 +16,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame60.xnb</Output>
+      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame60.xnb</Output>
       <Time>2011-10-06T10:25:52+02:00</Time>
     </Item>
     <Item>
@@ -25,7 +25,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicsand.xnb</Output>
+      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicsand.xnb</Output>
       <Time>2011-10-06T17:36:50+02:00</Time>
     </Item>
     <Item>
@@ -34,7 +34,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrass.xnb</Output>
+      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrass.xnb</Output>
       <Time>2011-10-07T10:10:00+02:00</Time>
     </Item>
     <Item>
@@ -43,7 +43,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrassdry.xnb</Output>
+      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrassdry.xnb</Output>
       <Time>2011-10-07T10:12:02+02:00</Time>
     </Item>
     <Item>
@@ -52,7 +52,7 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb</Output>
+      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb</Output>
       <Time>2011-10-07T11:34:18+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
@@ -61,10 +61,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\Content\</RootDirectory>
-      <LoggerRootDirectory>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\</LoggerRootDirectory>
-      <IntermediateDirectory>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>J:\GitRepo\HexaTest\HexaTest\Content\</RootDirectory>
+      <LoggerRootDirectory>J:\GitRepo\HexaTest\HexaTest\</LoggerRootDirectory>
+      <IntermediateDirectory>J:\GitRepo\HexaTest\HexaTest\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>

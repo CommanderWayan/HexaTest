@@ -46,8 +46,8 @@ namespace HexaTest
             graphics.PreferredBackBufferHeight = 768;
             graphics.IsFullScreen = false;
             graphics.ApplyChanges();
-            Window.Title = "Hexa";            
-
+            Window.Title = "Hexa";
+			textureManager.textureNet x = new textureManager.textureNet(this.Content);
             base.Initialize();
         }
 
