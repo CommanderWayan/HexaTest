@@ -20,12 +20,19 @@ namespace HexaTest.textureManager
 
     class textureNet
     {
-		Dictionary<string, textureNode> _nodes;
+		SortedDictionary<string, textureNode> _nodes;
 		Dictionary<string, Texture2D> _textures;
         public textureNet(ContentManager Content)
         {
-			this._nodes = new Dictionary<string, textureNode>();
+			this._nodes = new SortedDictionary<string, textureNode>();
 			_textures = helpers.LoadContent<Texture2D>(Content, "ground");
+			int i = 0;
+			foreach (KeyValuePair<string, Texture2D> kvp in _textures)
+			{
+				_nodes.Add(kvp.Key, new textureNode(i, kvp.Value));
+				i++;
+			}
+			//So, alle Nodes sind da - jetz müssen sie noch verbunden werden ;)
         }
     }
     class textureNode
