@@ -59,7 +59,7 @@ namespace HexaTest
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            cursorFrame = this.Content.Load<Texture2D>(@"ground\basicgrassdry");
+            cursorFrame = this.Content.Load<Texture2D>(@"ground\forest_green_plain");
             cursorTexture = this.Content.Load<Texture2D>(@"cursor\cursor_normal");
             // TODO: use this.Content to load your game content here
 
