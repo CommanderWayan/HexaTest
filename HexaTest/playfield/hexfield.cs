@@ -11,8 +11,9 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
+using HexaTest.Help;
 
-namespace HexaTest.playfield
+namespace HexaTest.Playfield
 {
     /// <summary>
     /// A Hexagonal Field
@@ -27,18 +28,19 @@ namespace HexaTest.playfield
     /// 4     2
     ///    3
     /// </summary>
-    class hexfield
+    class Hexfield
     {
         int _index;
-        public Point _origin;
+        Point _origin;
         Point _center;
         Texture2D _texture;
-        public const int _height = 60;
-        public const int _width = 60;
-        public Point[] _coordinates;
-        hexfield[] _neighbours;
+        int _height = Help.Helpers.HexFieldHeight;
+        int _width = Help.Helpers.HexFieldWidth;
+        Point[] _coordinates;
+		int _heightlevel = 1;
+        Hexfield[] _neighbours;
 
-        public hexfield(Point Origin, int Index)
+        public Hexfield(Point Origin, int Index)
         {
             this._origin = Origin;
             this._center = new Point(this._origin.X + _width / 2, this._origin.Y + _height / 2);
@@ -59,6 +61,22 @@ namespace HexaTest.playfield
         {
             get { return this._texture; }
         }
+		public Point Origin
+		{
+			get{return this._origin;}
+		}
+		public int Height
+		{
+			get{return this._height;}
+		}
+		public int Width
+		{
+			get{return this._width;}
+		}
+		public Point[] Coordinates
+		{
+			get { return this._coordinates; }
+		}
 
     }
 }

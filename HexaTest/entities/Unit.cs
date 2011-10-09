@@ -7,5 +7,11 @@ namespace HexaTest.entities
 {
 	class Unit
 	{
+		public Unit()
+		{
+			int _moveRange;
+			int _minFireRange;
+			int _maxFireRange;
+		}
 	}
 }
