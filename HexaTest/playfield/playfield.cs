@@ -11,20 +11,20 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
-using HexaTest.playfield;
+using HexaTest.Playfield;
 
-namespace HexaTest.playfield
+namespace HexaTest.Playfield
 {
-    class playfield
+    class Playfield
     {
-        public hexfield[,] _playfield;
+        public Hexfield[,] _playfield;
         public int _height, _width;
 
-        public playfield(int Height, int Width)
+        public Playfield(int Height, int Width)
         {
             this._height = Height;
             this._width = Width;
-            this._playfield = new hexfield[_height, _width];
+            this._playfield = new Hexfield[_height, _width];
 
             int counter = 0;
             for (int y = 0; y <= _playfield.GetUpperBound(0); y++)
@@ -33,15 +33,15 @@ namespace HexaTest.playfield
                 {
                     if ((x % 2) == 0) // gerade
                     {
-                        _playfield[y, x] = new hexfield(new Point((int)((2 * hexfield._width) / 3) * x,
-                                                                 (hexfield._height) * y),
+                        _playfield[y, x] = new Hexfield(new Point((int)((2 * Help.Helpers.HexFieldWidth) / 3) * x,
+                                                                 (Help.Helpers.HexFieldHeight) * y),
                                                                   counter);
                     }
                     else
                     {
-                        _playfield[y, x] = new hexfield(new Point((int)((2 * hexfield._width) / 3) * x,
-                                                                 (hexfield._height * y + hexfield._height / 2)),
-                                                                  counter);
+                        _playfield[y, x] = new Hexfield(new Point((int)((2 * Help.Helpers.HexFieldWidth) / 3) * x,
+																 (Help.Helpers.HexFieldHeight * y + Help.Helpers.HexFieldHeight / 2)),
+                                                                  counter);						
                     }
                 }
             }

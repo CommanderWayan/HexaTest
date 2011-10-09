@@ -7,5 +7,9 @@ namespace HexaTest.entities
 {
 	class Unit
 	{
+		public Unit()
+		{
+		}
+
 	}
 }

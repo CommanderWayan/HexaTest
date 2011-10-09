@@ -5,10 +5,10 @@ using System.Text;
 using System.IO;
 using Microsoft.Xna.Framework.Content;
 
-namespace HexaTest.Helpers
+namespace HexaTest.Help
 {
-	static class helpers
-	{
+	static class Helpers
+	{		
 		/// <summary>
 		/// Load all content within a certain folder. The function
 		/// returns a dictionary where the file name, without type
@@ -58,6 +58,8 @@ namespace HexaTest.Helpers
 			SW,
 			NW
 		}
+		public const int HexFieldWidth = 60;
+		public const int HexFieldHeight = 60;
 	}
 
 

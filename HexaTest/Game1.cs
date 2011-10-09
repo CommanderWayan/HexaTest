@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
+using HexaTest.Help;
 
 namespace HexaTest
 {
@@ -25,7 +26,7 @@ namespace HexaTest
         Texture2D cursorTexture;
         Vector2 cursorPosition;
 
-        playfield.playfield hexafield;
+        Playfield.Playfield hexafield;
 
         public Game1()
         {
@@ -63,7 +64,7 @@ namespace HexaTest
             cursorTexture = this.Content.Load<Texture2D>(@"cursor\cursor_normal");
             // TODO: use this.Content to load your game content here
 
-            hexafield = new HexaTest.playfield.playfield(11, 21);
+            hexafield = new HexaTest.Playfield.Playfield(11, 21);
             hexafield.setUniTextureTest(cursorFrame);
         }
 
@@ -108,7 +109,7 @@ namespace HexaTest
             {
                 for (int x = 0; x <= hexafield._playfield.GetUpperBound(1); x++)
                 {
-                    spriteBatch.Draw(hexafield._playfield[y,x].getTexture, new Rectangle(hexafield._playfield[y,x]._origin.X, hexafield._playfield[y,x]._origin.Y,playfield.hexfield._width, playfield.hexfield._height),Color.White);
+                    spriteBatch.Draw(hexafield._playfield[y,x].getTexture, new Rectangle(hexafield._playfield[y,x].Origin.X, hexafield._playfield[y,x].Origin.Y,Helpers.HexFieldWidth, Helpers.HexFieldHeight),Color.White);
                 }
             }            
             spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);            
