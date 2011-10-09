@@ -1,6 +1,7 @@
 Content\cursor\cursor_frame.xnb
 Content\cursor\cursor_frame60.xnb
-Content\ground\basicsand.xnb
-Content\ground\basicgrass.xnb
-Content\ground\basicgrassdry.xnb
 Content\cursor\cursor_normal.xnb
+Content\ground\forest_green_plain.xnb
+Content\ground\grass_green_plain.xnb
+Content\ground\sand_dry_plain.xnb
+Content\ground\sand_wet_plain.xnb
