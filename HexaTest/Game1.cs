@@ -47,7 +47,7 @@ namespace HexaTest
             graphics.IsFullScreen = false;
             graphics.ApplyChanges();
             Window.Title = "Hexa";
-			textureManager.textureNet x = new textureManager.textureNet(this.Content);
+			textureManager.TextureNet x = new textureManager.TextureNet(this.Content);
             base.Initialize();
         }
 
