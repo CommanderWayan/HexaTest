@@ -18,51 +18,51 @@ namespace HexaTest.textureManager
 {	
     
 
-    class textureNet
+    class TextureNet
     {
-		SortedDictionary<string, textureNode> _nodes;
+		SortedDictionary<string, TextureNode> _nodes;
 		Dictionary<string, Texture2D> _textures;
-        public textureNet(ContentManager Content)
+        public TextureNet(ContentManager Content)
         {
-			this._nodes = new SortedDictionary<string, textureNode>();
+			this._nodes = new SortedDictionary<string, TextureNode>();
 			_textures = helpers.LoadContent<Texture2D>(Content, "ground");
 			int i = 0;
 			foreach (KeyValuePair<string, Texture2D> kvp in _textures)
 			{
-				_nodes.Add(kvp.Key, new textureNode(i, kvp.Value));
+				_nodes.Add(kvp.Key, new TextureNode(i, kvp.Value));
 				i++;
 			}
 			//So, alle Nodes sind da - jetz müssen sie noch verbunden werden ;)
         }
     }
-    class textureNode
+    class TextureNode
     {        
         int _id;
         Texture2D _texture;
 		string _texname;
-		List<textureNode>[] _connections;
+		List<TextureNode>[] _connections;
        
-        public textureNode(int ID ,Texture2D Texture)
+        public TextureNode(int ID ,Texture2D Texture)
         {           
 			
             this._texture = Texture;
 			this._texname = _texture.Name;
             this._id = ID;
-			this._connections = new List<textureNode>[6];
+			this._connections = new List<TextureNode>[6];
 			initConnectionList();
         }
 		public int ID { get { return this._id; } }
 		public string TextureName { get { return this._texname; } }
-		public List<textureNode> connections(helpers.Neighbors Direction) { return this._connections[(int)Direction]; }
+		public List<TextureNode> connections(helpers.Neighbors Direction) { return this._connections[(int)Direction]; }
 
 		private void initConnectionList()
 		{
 			for (int i = 0; i < this._connections.Length; i++)
 			{
-				_connections[i] = new List<textureNode>();
+				_connections[i] = new List<TextureNode>();
 			}
 		}
-		public void setConnection(ref textureNode NodeToConnectTo,helpers.Neighbors Direction)
+		public void setConnection(ref TextureNode NodeToConnectTo,helpers.Neighbors Direction)
 		{
 			_connections[(int)Direction].Add(NodeToConnectTo);			
 		}
