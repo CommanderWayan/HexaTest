@@ -9,7 +9,9 @@ namespace HexaTest.entities
 	{
 		public Unit()
 		{
+			int _moveRange;
+			int _minFireRange;
+			int _maxFireRange;
 		}
-
 	}
 }
