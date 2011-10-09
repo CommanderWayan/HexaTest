@@ -1,2 +1,3 @@
 D:\users\Wayan\Documents\Visual Studio 2010\Projects\HexaTest\HexaTest\Content\obj\x86\Debug\ResolveAssemblyReference.cache
 J:\GitRepo\HexaTest\HexaTest\Content\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Programmier\git\HexaTest\Content\obj\x86\Debug\ResolveAssemblyReference.cache

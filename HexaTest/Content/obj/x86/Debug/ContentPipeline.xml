@@ -7,8 +7,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame.xnb</Output>
-      <Time>2011-10-06T09:30:02+02:00</Time>
+      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame.xnb</Output>
+      <Time>2011-10-08T18:16:41.0092241+02:00</Time>
     </Item>
     <Item>
       <Source>cursor\cursor_frame60.png</Source>
@@ -16,8 +16,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame60.xnb</Output>
-      <Time>2011-10-06T10:25:52+02:00</Time>
+      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame60.xnb</Output>
+      <Time>2011-10-08T18:16:41.0092241+02:00</Time>
     </Item>
     <Item>
       <Source>ground\basicsand.png</Source>
@@ -25,8 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicsand.xnb</Output>
-      <Time>2011-10-06T17:36:50+02:00</Time>
+      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\basicsand.xnb</Output>
+      <Time>2011-10-08T18:16:41.0248242+02:00</Time>
     </Item>
     <Item>
       <Source>ground\basicgrass.png</Source>
@@ -34,8 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrass.xnb</Output>
-      <Time>2011-10-07T10:10:00+02:00</Time>
+      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\basicgrass.xnb</Output>
+      <Time>2011-10-08T18:16:41.0248242+02:00</Time>
     </Item>
     <Item>
       <Source>ground\basicgrassdry.png</Source>
@@ -43,8 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\basicgrassdry.xnb</Output>
-      <Time>2011-10-07T10:12:02+02:00</Time>
+      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\basicgrassdry.xnb</Output>
+      <Time>2011-10-08T18:16:41.0248242+02:00</Time>
     </Item>
     <Item>
       <Source>cursor\cursor_normal.png</Source>
@@ -52,8 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb</Output>
-      <Time>2011-10-07T11:34:18+02:00</Time>
+      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb</Output>
+      <Time>2011-10-08T18:16:41.0092241+02:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
@@ -61,10 +61,10 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>J:\GitRepo\HexaTest\HexaTest\Content\</RootDirectory>
-      <LoggerRootDirectory>J:\GitRepo\HexaTest\HexaTest\</LoggerRootDirectory>
-      <IntermediateDirectory>J:\GitRepo\HexaTest\HexaTest\Content\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>E:\Programmier\git\HexaTest\Content\</RootDirectory>
+      <LoggerRootDirectory>E:\Programmier\git\HexaTest\</LoggerRootDirectory>
+      <IntermediateDirectory>E:\Programmier\git\HexaTest\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
@@ -93,7 +93,7 @@
       </Assembly>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2011-10-08T15:33:27.9532533+02:00</Value>
+        <Value>2011-10-08T15:16:14.4936583+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>
