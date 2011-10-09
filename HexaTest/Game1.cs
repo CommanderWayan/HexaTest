@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
+using HexaTest.config;
 
 namespace HexaTest
 {
@@ -41,6 +42,7 @@ namespace HexaTest
         /// </summary>
         protected override void Initialize()
         {
+            Config.checkAndCreate();
             // TODO: Add your initialization logic here
             graphics.PreferredBackBufferWidth = 1024;
             graphics.PreferredBackBufferHeight = 768;
@@ -49,6 +51,14 @@ namespace HexaTest
             Window.Title = "Hexa";
 			textureManager.TextureNet x = new textureManager.TextureNet(this.Content);
             base.Initialize();
+
+            //textureManager.TextureXMLWrapper xml = new textureManager.TextureXMLWrapper();
+            //xml.texDef.Add(new textureManager.TextureDefintion("baum", 0, 0, new int[] { 0, 0, 0, 0, 0, 0 }));
+            //xml.texDef.Add(new textureManager.TextureDefintion("wiese", 1, 1, new int[] { 1, 1, 1, 1, 1, 1 }));
+            //xml.texDef.Add(new textureManager.TextureDefintion("strand", 2, 2, new int[] { 2, 2, 2, 2, 2, 2 }));
+
+            //xml.exportXML("config/example.xml");
+            //xml.importXML("config/example.xml");
         }
 
         /// <summary>

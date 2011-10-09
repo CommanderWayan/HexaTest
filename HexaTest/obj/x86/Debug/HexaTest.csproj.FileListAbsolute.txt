@@ -35,3 +35,16 @@ J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\forest_green_plain.xnb
 J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\grass_green_plain.xnb
 J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\sand_dry_plain.xnb
 J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\sand_wet_plain.xnb
+E:\Programmier\git\HexaTest\obj\x86\Debug\HexaTest.exe
+E:\Programmier\git\HexaTest\obj\x86\Debug\HexaTest.pdb
+E:\Programmier\git\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame.xnb
+E:\Programmier\git\HexaTest\bin\x86\Debug\Content\cursor\cursor_frame60.xnb
+E:\Programmier\git\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb
+E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\forest_green_plain.xnb
+E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\grass_green_plain.xnb
+E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\sand_dry_plain.xnb
+E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\sand_wet_plain.xnb
+E:\Programmier\git\HexaTest\bin\x86\Debug\HexaTest.exe
+E:\Programmier\git\HexaTest\bin\x86\Debug\HexaTest.pdb
+E:\Programmier\git\HexaTest\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Programmier\git\HexaTest\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
