@@ -1,3 +1,8 @@
 *.suo
 /HexaTest/bin
 /HexaTest/obj
+/Mapeditor/bin
+/Mapeditor/obj
+/HexaTest/Content/bin
+/HexaTest/Content/config
+/HexaTest/Content/obj

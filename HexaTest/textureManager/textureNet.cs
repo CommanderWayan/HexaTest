@@ -18,7 +18,7 @@ namespace HexaTest.textureManager
 {	
     
 
-    class TextureNet
+    public class TextureNet
     {
 		SortedDictionary<string, TextureNode> _nodes;
 		Dictionary<string, Texture2D> _textures;
@@ -44,7 +44,7 @@ namespace HexaTest.textureManager
 			return null; // hier natürlich die liste rein ;)
 		}
     }
-    class TextureNode
+    public class TextureNode
     {        
         int _id;
         Texture2D _texture;
