@@ -9,11 +9,12 @@ namespace HexaTest.textureManager
 {
     public class TextureXMLWrapper
     {
-        public List<TextureDefintion> texDef;
+        //public List<TextureDefintion> texDef;
+        public List<Texturedefintion> texDef;
 
         public TextureXMLWrapper()
         {
-            texDef = new List<TextureDefintion>();
+            texDef = new List<Texturedefintion>();
         }
 
         public void exportXML(string path)
@@ -30,29 +31,44 @@ namespace HexaTest.textureManager
             TextureXMLWrapper definitions = (TextureXMLWrapper)xmlSerializer.Deserialize(fileStream);
             this.texDef = definitions.texDef;
         }
-    }
 
-    public class TextureDefintion
-    {
-        public string name;
-        public uint id;
-        public uint type;
-        public int[] direction = new int[6];
-
-        public TextureDefintion()
+        public Dictionary<string, List<string>> getAsDictionary()
         {
-            name = "";
-            id = 0;
-            type = 0;
-            direction = new int[6];
+            Dictionary<string, List<string>> tmpDic = new Dictionary<string, List<string>>();
+            for (int i = 0; i < texDef.Count; i++)
+            {
+                Texturedefintion actDef = texDef[i];
+                tmpDic.Add(actDef.name, actDef.connections);
+            }
+            return tmpDic;
         }
 
-        public TextureDefintion(string name, uint id, uint type, int[] direc)
+        public void createFromDictionary(Dictionary<string, List<string>> inDic)
+        {
+            foreach (KeyValuePair<string, List<string>> kvp in inDic)
+            {
+                texDef.Add(new Texturedefintion(kvp.Key, kvp.Value));
+            }
+        }
+    }
+
+    public class Texturedefintion
+    {
+        public string name;
+        public List<string> connections;
+
+        public Texturedefintion()
+        {
+            name = "";
+            connections = new List<string>();
+            //textureswithpossibilities = new Dictionary<string, List<string>>();
+        }
+
+        public Texturedefintion(string name, List<string> connections)
         {
             this.name = name;
-            this.id = id;
-            this.type = type;
-            this.direction = direc;
+            this.connections = connections;
+            //this.textureswithpossibilities = texturewithpossibilities;
         }
     }
 }

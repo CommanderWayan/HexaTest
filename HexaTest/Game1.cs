@@ -54,9 +54,29 @@ namespace HexaTest
             base.Initialize();
 
             //textureManager.TextureXMLWrapper xml = new textureManager.TextureXMLWrapper();
-            //xml.texDef.Add(new textureManager.TextureDefintion("baum", 0, 0, new int[] { 0, 0, 0, 0, 0, 0 }));
-            //xml.texDef.Add(new textureManager.TextureDefintion("wiese", 1, 1, new int[] { 1, 1, 1, 1, 1, 1 }));
-            //xml.texDef.Add(new textureManager.TextureDefintion("strand", 2, 2, new int[] { 2, 2, 2, 2, 2, 2 }));
+            //Dictionary<string, List<string>> dic = new Dictionary<string, List<string>>();
+            //List<string> tmpList = new List<string>();
+            //tmpList.Add("baum");
+            //tmpList.Add("wiese");
+            ////xml.texDef.Add(new textureManager.Texturedefintion("baum", tmpList));
+            //dic.Add("baum", tmpList);
+            //tmpList = new List<string>();
+            //tmpList.Add("wasser");
+            //tmpList.Add("strand"); 
+            //tmpList.Add("kliff");
+            ////xml.texDef.Add(new textureManager.Texturedefintion("strand", tmpList));
+            //dic.Add("strand", tmpList);
+            //tmpList = new List<string>();
+            //tmpList.Add("wasser");
+            //tmpList.Add("kliff");
+            //tmpList.Add("wald");
+            //tmpList.Add("berg");
+            //dic.Add("berg", tmpList);
+            ////xml.texDef.Add(new textureManager.TextureDefintion("baum", 0, 0, new int[] { 0, 0, 0, 0, 0, 0 }));
+            ////xml.texDef.Add(new textureManager.TextureDefintion("wiese", 1, 1, new int[] { 1, 1, 1, 1, 1, 1 }));
+            ////xml.texDef.Add(new textureManager.TextureDefintion("strand", 2, 2, new int[] { 2, 2, 2, 2, 2, 2 }));
+
+            //xml.createFromDictionary(dic);
 
             //xml.exportXML("config/example.xml");
             //xml.importXML("config/example.xml");
