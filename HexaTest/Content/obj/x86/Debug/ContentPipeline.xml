@@ -25,13 +25,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb</Output>
-      <Time>2011-10-08T18:16:41.0092241+02:00</Time>
-=======
       <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\cursor\cursor_normal.xnb</Output>
       <Time>2011-10-07T11:34:18+02:00</Time>
->>>>>>> 0089a791ac48bb0c0ad1079380d5b7e2c73daffd
     </Item>
     <Item>
       <Source>ground\forest_green_plain.png</Source>
@@ -39,13 +34,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\forest_green_plain.xnb</Output>
-      <Time>2011-10-09T21:50:29.1490101+02:00</Time>
-=======
       <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\forest_green_plain.xnb</Output>
       <Time>2011-10-09T21:22:53.4956136+02:00</Time>
->>>>>>> 0089a791ac48bb0c0ad1079380d5b7e2c73daffd
     </Item>
     <Item>
       <Source>ground\grass_green_plain.png</Source>
@@ -53,13 +43,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\grass_green_plain.xnb</Output>
-      <Time>2011-10-09T21:50:29.1500102+02:00</Time>
-=======
       <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\grass_green_plain.xnb</Output>
       <Time>2011-10-09T21:22:53.5086143+02:00</Time>
->>>>>>> 0089a791ac48bb0c0ad1079380d5b7e2c73daffd
     </Item>
     <Item>
       <Source>ground\sand_dry_plain.png</Source>
@@ -67,13 +52,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\sand_dry_plain.xnb</Output>
-      <Time>2011-10-09T21:50:29.1500102+02:00</Time>
-=======
       <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\sand_dry_plain.xnb</Output>
       <Time>2011-10-09T21:22:53.5116145+02:00</Time>
->>>>>>> 0089a791ac48bb0c0ad1079380d5b7e2c73daffd
     </Item>
     <Item>
       <Source>ground\sand_wet_plain.png</Source>
@@ -81,13 +61,8 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-<<<<<<< HEAD
-      <Output>E:\Programmier\git\HexaTest\bin\x86\Debug\Content\ground\sand_wet_plain.xnb</Output>
-      <Time>2011-10-09T21:50:29.1660111+02:00</Time>
-=======
       <Output>J:\GitRepo\HexaTest\HexaTest\bin\x86\Debug\Content\ground\sand_wet_plain.xnb</Output>
       <Time>2011-10-09T21:22:53.5146147+02:00</Time>
->>>>>>> 0089a791ac48bb0c0ad1079380d5b7e2c73daffd
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
