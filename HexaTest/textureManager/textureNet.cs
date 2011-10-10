@@ -41,7 +41,7 @@ namespace HexaTest.textureManager
 		/// <returns>a list with all adjacent possible Texturename WITHOUT the filename extension</returns>
 		public List<string> getConnectionsForNode(TextureNode Node)
 		{
-			return null;
+			return null; // hier natürlich die liste rein ;)
 		}
     }
     class TextureNode
