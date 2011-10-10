@@ -1,6 +1,0 @@
-Content\cursor\cursor_frame.xnb
-Content\cursor\cursor_frame60.xnb
-Content\ground\basicsand.xnb
-Content\ground\basicgrass.xnb
-Content\ground\basicgrassdry.xnb
-Content\cursor\cursor_normal.xnb
