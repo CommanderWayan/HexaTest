@@ -34,6 +34,15 @@ namespace HexaTest.textureManager
 			}
 			//So, alle Nodes sind da - jetz müssen sie noch verbunden werden ;)
         }
+		/// <summary>
+		/// Gets a List with all possible adjacent Textures
+		/// </summary>
+		/// <param name="Node">The Texture node to search for</param>
+		/// <returns>a list with all adjacent possible Texturename WITHOUT the filename extension</returns>
+		public List<string> getConnectionsForNode(TextureNode Node)
+		{
+			return null;
+		}
     }
     class TextureNode
     {        
