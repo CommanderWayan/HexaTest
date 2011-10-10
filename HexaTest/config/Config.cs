@@ -11,9 +11,14 @@ namespace HexaTest.config
         static string configPath = @"config/";
         public static void checkAndCreate()
         {
-            if (!Directory.Exists(Environment.CurrentDirectory + @"/" + configPath))
+            checkAndCreate(configPath);
+        }
+
+        private static void checkAndCreate(string path)
+        {
+            if (!Directory.Exists(Environment.CurrentDirectory + @"/" + path))
             {
-                Directory.CreateDirectory(Environment.CurrentDirectory + @"/" + configPath);
+                Directory.CreateDirectory(Environment.CurrentDirectory + @"/" + path);
             }
         }
     }
