@@ -118,6 +118,7 @@
   <ItemGroup>
     <Compile Include="config\Config.cs" />
     <Compile Include="entities\Unit.cs" />
+    <Compile Include="entities\Weapon.cs" />
     <Compile Include="helpers.cs" />
     <Compile Include="playfield\hexfield.cs" />
     <Compile Include="playfield\playfield.cs" />

@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Content;
 
 namespace HexaTest.Help
 {
-	static class Helpers
+	public static class Helpers
 	{		
 		/// <summary>
 		/// Load all content within a certain folder. The function

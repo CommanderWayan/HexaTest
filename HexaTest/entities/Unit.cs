@@ -7,11 +7,17 @@ namespace HexaTest.entities
 {
 	class Unit
 	{
-		public Unit()
+		int _moveRange;
+		int _viewDistance;
+		int _currentFuel;
+		int _maxFuel;
+
+		//TODO: maxfuel setzen
+		public Unit(int CurrentFuel)
 		{
-			int _moveRange;
-			int _minFireRange;
-			int _maxFireRange;
+			this._currentFuel = CurrentFuel; 
+
+			
 		}
 	}
 }

@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexaTest", "HexaTest\HexaTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HexaTestContent", "HexaTest\Content\HexaTestContent.contentproj", "{9A72113C-05D5-4015-9E32-90A3945E305D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapeditor", "Mapeditor\Mapeditor.csproj", "{CF558418-FCB7-4907-AC43-5D6EC092D496}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -17,6 +19,10 @@ Global
 		{C645534A-5BC9-4316-9777-F53E95642999}.Release|x86.Build.0 = Release|x86
 		{9A72113C-05D5-4015-9E32-90A3945E305D}.Debug|x86.ActiveCfg = Debug|x86
 		{9A72113C-05D5-4015-9E32-90A3945E305D}.Release|x86.ActiveCfg = Release|x86
+		{CF558418-FCB7-4907-AC43-5D6EC092D496}.Debug|x86.ActiveCfg = Debug|x86
+		{CF558418-FCB7-4907-AC43-5D6EC092D496}.Debug|x86.Build.0 = Debug|x86
+		{CF558418-FCB7-4907-AC43-5D6EC092D496}.Release|x86.ActiveCfg = Release|x86
+		{CF558418-FCB7-4907-AC43-5D6EC092D496}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
