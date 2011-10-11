@@ -17,6 +17,16 @@ namespace HexaTest.textureManager
             texDef = new List<Texturedefintion>();
         }
 
+        public TextureXMLWrapper(string path)
+        {
+            importXML(path);
+        }
+
+        public TextureXMLWrapper(Dictionary<string, List<string>> dic)
+        {
+            createFromDictionary(dic);
+        }
+
         public void exportXML(string path)
         {
             var fileStream = new FileStream(path, FileMode.OpenOrCreate);
@@ -45,6 +55,7 @@ namespace HexaTest.textureManager
 
         public void createFromDictionary(Dictionary<string, List<string>> inDic)
         {
+            texDef = new List<Texturedefintion>();
             foreach (KeyValuePair<string, List<string>> kvp in inDic)
             {
                 texDef.Add(new Texturedefintion(kvp.Key, kvp.Value));

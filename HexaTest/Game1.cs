@@ -53,6 +53,26 @@ namespace HexaTest
 			textureManager.TextureNet x = new textureManager.TextureNet(this.Content);
             base.Initialize();
 
+            //textureManager.TextureManager texMan = new textureManager.TextureManager();
+            //texMan.addTexture("wald");
+            //texMan.addTexture("wiese");
+            //texMan.addTexture("berg");
+            //texMan.addTexture("steppe");
+            //texMan.addTexture("strand");
+
+            //texMan.addConnection("wald", "wiese");
+            //texMan.addConnection("wiese", "wlad");
+            //texMan.addConnection("wald", "wald");
+            //texMan.addConnection("wiese", "wiese");
+            //texMan.addConnection("berg", "berg");
+            //texMan.addConnection("steppe", "steppe");
+            //texMan.addConnection("strand", "strand");
+            //texMan.addConnection("berg", "wiese");
+            //texMan.addConnection("strand", "wiese");
+            //texMan.addConnection("strand", "wald");
+
+            //texMan.save("config/example.xml");
+
             //textureManager.TextureXMLWrapper xml = new textureManager.TextureXMLWrapper();
             //Dictionary<string, List<string>> dic = new Dictionary<string, List<string>>();
             //List<string> tmpList = new List<string>();
