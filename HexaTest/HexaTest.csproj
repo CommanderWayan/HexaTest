@@ -125,9 +125,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="textureManager\TextureConnectionManager.cs" />
     <Compile Include="textureManager\TextureManager.cs" />
     <Compile Include="textureManager\TextureXMLWrapper.cs" />
-    <Compile Include="textureManager\textureNet.cs" />
+    <Compile Include="textureManager\TextureNet.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />

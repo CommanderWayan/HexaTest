@@ -40,11 +40,12 @@ namespace HexaTest.Playfield
 		int _heightlevel = 1;
         Hexfield[] _neighbours;
 
-        public Hexfield(Point Origin, int Index)
+        public Hexfield(Point Origin, int Index, Texture2D Texture)
         {
             this._origin = Origin;
             this._center = new Point(this._origin.X + _width / 2, this._origin.Y + _height / 2);
             this._index = Index;
+			this._texture = Texture;
             _coordinates = new Point[]  {(new Point(_origin.X + _width / 3          , _origin.Y)),
                                         (new Point(_origin.X + (int)(_width / 1.5)  , _origin.Y)),
                                         (new Point(_origin.X + _width               , _origin.Y + _height / 2)),

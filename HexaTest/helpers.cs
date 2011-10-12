@@ -21,7 +21,7 @@ namespace HexaTest.Help
 		/// <param name="contentManager">The content manager for which content is to be loaded.</param>
 		/// <param name="contentFolder">The game project root folder relative folder path.</param>
 		/// <returns>A list of loaded content objects.</returns>
-		public static Dictionary<String, T> LoadContent<T>(this ContentManager contentManager, string contentFolder)
+		public static SortedDictionary<String, T> LoadContent<T>(this ContentManager contentManager, string contentFolder)
 		{
 			//Load directory info, abort if none
 			DirectoryInfo dir = new DirectoryInfo(contentManager.RootDirectory + "\\" + contentFolder);
@@ -29,7 +29,7 @@ namespace HexaTest.Help
 				throw new DirectoryNotFoundException();
 
 			//Init the resulting list
-			Dictionary<String, T> result = new Dictionary<String, T>();
+			SortedDictionary<String, T> result = new SortedDictionary<String, T>();
 
 			//Load all files that matches the file filter
 			FileInfo[] files = dir.GetFiles("*.*");

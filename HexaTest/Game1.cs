@@ -49,8 +49,7 @@ namespace HexaTest
             graphics.PreferredBackBufferHeight = 768;
             graphics.IsFullScreen = false;
             graphics.ApplyChanges();
-            Window.Title = "Hexa";
-			textureManager.TextureNet x = new textureManager.TextureNet(this.Content);
+            Window.Title = "Hexa";			
             base.Initialize();
 
             //textureManager.TextureManager texMan = new textureManager.TextureManager();
@@ -109,13 +108,12 @@ namespace HexaTest
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-            cursorFrame = this.Content.Load<Texture2D>(@"ground\forest_green_plain");
+            spriteBatch = new SpriteBatch(GraphicsDevice);           
             cursorTexture = this.Content.Load<Texture2D>(@"cursor\cursor_normal");
             // TODO: use this.Content to load your game content here
 
-            hexafield = new HexaTest.Playfield.Playfield(11, 21);
-            hexafield.setUniTextureTest(cursorFrame);
+            hexafield = new HexaTest.Playfield.Playfield(21, 31, this.Content);
+            //hexafield.setUniTextureTest(cursorFrame);
         }
 
         /// <summary>

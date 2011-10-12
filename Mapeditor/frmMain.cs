@@ -15,14 +15,14 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
-using HexaTest.textureManager;
+using HexaTest.TextureManagement;
 
 namespace Mapeditor
 {
 	public partial class frmMain : Form
 	{
 		ContentManager Content { get; set; }
-		HexaTest.textureManager.TextureNet _availableTextures;
+		HexaTest.TextureManagement.TextureNet _availableTextures;
 		public frmMain()
 		{			
 			InitializeComponent();

@@ -100,22 +100,22 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ground\forest_green_plain.png">
+    <Compile Include="terrain\forest_green_plain.png">
       <Name>forest_green_plain</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="ground\grass_green_plain.png">
+    <Compile Include="terrain\grass_green_plain.png">
       <Name>grass_green_plain</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="ground\sand_dry_plain.png">
+    <Compile Include="terrain\sand_dry_plain.png">
       <Name>sand_dry_plain</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="ground\sand_wet_plain.png">
+    <Compile Include="terrain\sand_wet_plain.png">
       <Name>sand_wet_plain</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>

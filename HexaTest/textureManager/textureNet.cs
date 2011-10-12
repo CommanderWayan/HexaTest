@@ -14,18 +14,18 @@ using Microsoft.Xna.Framework.Storage;
 using HexaTest.Playfield;
 using HexaTest.Help;
 
-namespace HexaTest.textureManager
+namespace HexaTest.TextureManagement
 {	
     
 
     public class TextureNet
     {
 		SortedDictionary<string, TextureNode> _nodes;
-		Dictionary<string, Texture2D> _textures;
-        public TextureNet(ContentManager Content)
+		SortedDictionary<string, Texture2D> _textures;
+        public TextureNet(SortedDictionary<string, Texture2D> Textures)
         {
 			this._nodes = new SortedDictionary<string, TextureNode>();
-			_textures = Helpers.LoadContent<Texture2D>(Content, "ground");
+			_textures = Textures;
 			int i = 0;
 			foreach (KeyValuePair<string, Texture2D> kvp in _textures)
 			{

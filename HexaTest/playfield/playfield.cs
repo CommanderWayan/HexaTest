@@ -12,6 +12,7 @@ using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
 using HexaTest.Playfield;
+using HexaTest.TextureManagement;
 
 namespace HexaTest.Playfield
 {
@@ -19,12 +20,18 @@ namespace HexaTest.Playfield
     {
         public Hexfield[,] _playfield;
         public int _height, _width;
+		SortedDictionary<string, Texture2D> _textures;
+		TextureManager _texMan;
+		ContentManager _content;
 
-        public Playfield(int Height, int Width)
+        public Playfield(int Height, int Width, ContentManager Content)
         {
             this._height = Height;
             this._width = Width;
             this._playfield = new Hexfield[_height, _width];
+			this._content = Content;
+			this._texMan = new TextureManager(Content);
+			this._textures = _texMan.Textures;
 
             int counter = 0;
             for (int y = 0; y <= _playfield.GetUpperBound(0); y++)
@@ -35,13 +42,13 @@ namespace HexaTest.Playfield
                     {
                         _playfield[y, x] = new Hexfield(new Point((int)((2 * Help.Helpers.HexFieldWidth) / 3) * x,
                                                                  (Help.Helpers.HexFieldHeight) * y),
-                                                                  counter);
+                                                                  counter, _textures.ElementAt(0).Value);
                     }
                     else
                     {
                         _playfield[y, x] = new Hexfield(new Point((int)((2 * Help.Helpers.HexFieldWidth) / 3) * x,
 																 (Help.Helpers.HexFieldHeight * y + Help.Helpers.HexFieldHeight / 2)),
-                                                                  counter);						
+																  counter, _textures.ElementAt(1).Value);						
                     }
                 }
             }
