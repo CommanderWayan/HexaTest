@@ -34,6 +34,7 @@ namespace HexaTest.Playfield
 			this._textures = _texMan.Textures;
 
             int counter = 0;
+			Random rnd = new Random();
             for (int y = 0; y <= _playfield.GetUpperBound(0); y++)
             {
                 for (int x = 0; x <= _playfield.GetUpperBound(1); x++, counter++)
@@ -42,13 +43,13 @@ namespace HexaTest.Playfield
                     {
                         _playfield[y, x] = new Hexfield(new Point((int)((2 * Help.Helpers.HexFieldWidth) / 3) * x,
                                                                  (Help.Helpers.HexFieldHeight) * y),
-                                                                  counter, _textures.ElementAt(0).Value);
+                                                                  counter, _textures.ElementAt(rnd.Next(0,_textures.Count)).Value);
                     }
                     else
                     {
                         _playfield[y, x] = new Hexfield(new Point((int)((2 * Help.Helpers.HexFieldWidth) / 3) * x,
 																 (Help.Helpers.HexFieldHeight * y + Help.Helpers.HexFieldHeight / 2)),
-																  counter, _textures.ElementAt(1).Value);						
+																  counter, _textures.ElementAt(rnd.Next(0,_textures.Count)).Value);						
                     }
                 }
             }
