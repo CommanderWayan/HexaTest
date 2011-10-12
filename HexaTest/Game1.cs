@@ -29,6 +29,8 @@ namespace HexaTest
 
         Playfield.Playfield hexafield;
 
+		KeyboardState keyState;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -52,53 +54,7 @@ namespace HexaTest
             Window.Title = "Hexa";			
             base.Initialize();
 
-            //textureManager.TextureManager texMan = new textureManager.TextureManager();
-            //texMan.addTexture("wald");
-            //texMan.addTexture("wiese");
-            //texMan.addTexture("berg");
-            //texMan.addTexture("steppe");
-            //texMan.addTexture("strand");
-
-            //texMan.addConnection("wald", "wiese");
-            //texMan.addConnection("wiese", "wlad");
-            //texMan.addConnection("wald", "wald");
-            //texMan.addConnection("wiese", "wiese");
-            //texMan.addConnection("berg", "berg");
-            //texMan.addConnection("steppe", "steppe");
-            //texMan.addConnection("strand", "strand");
-            //texMan.addConnection("berg", "wiese");
-            //texMan.addConnection("strand", "wiese");
-            //texMan.addConnection("strand", "wald");
-
-            //texMan.save("config/example.xml");
-
-            //textureManager.TextureXMLWrapper xml = new textureManager.TextureXMLWrapper();
-            //Dictionary<string, List<string>> dic = new Dictionary<string, List<string>>();
-            //List<string> tmpList = new List<string>();
-            //tmpList.Add("baum");
-            //tmpList.Add("wiese");
-            ////xml.texDef.Add(new textureManager.Texturedefintion("baum", tmpList));
-            //dic.Add("baum", tmpList);
-            //tmpList = new List<string>();
-            //tmpList.Add("wasser");
-            //tmpList.Add("strand"); 
-            //tmpList.Add("kliff");
-            ////xml.texDef.Add(new textureManager.Texturedefintion("strand", tmpList));
-            //dic.Add("strand", tmpList);
-            //tmpList = new List<string>();
-            //tmpList.Add("wasser");
-            //tmpList.Add("kliff");
-            //tmpList.Add("wald");
-            //tmpList.Add("berg");
-            //dic.Add("berg", tmpList);
-            ////xml.texDef.Add(new textureManager.TextureDefintion("baum", 0, 0, new int[] { 0, 0, 0, 0, 0, 0 }));
-            ////xml.texDef.Add(new textureManager.TextureDefintion("wiese", 1, 1, new int[] { 1, 1, 1, 1, 1, 1 }));
-            ////xml.texDef.Add(new textureManager.TextureDefintion("strand", 2, 2, new int[] { 2, 2, 2, 2, 2, 2 }));
-
-            //xml.createFromDictionary(dic);
-
-            //xml.exportXML("config/example.xml");
-            //xml.importXML("config/example.xml");
+            
         }
 
         /// <summary>
@@ -135,7 +91,11 @@ namespace HexaTest
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
+			keyState = Keyboard.GetState();
+			if(keyState.IsKeyDown(Keys.F5))
+			{
+				hexafield = new HexaTest.Playfield.Playfield(21, 31, this.Content);
+			}
             // TODO: Add your update logic here
             cursorPosition.X = Mouse.GetState().X;
             cursorPosition.Y = Mouse.GetState().Y;
