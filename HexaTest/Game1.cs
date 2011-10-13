@@ -13,6 +13,7 @@ using Microsoft.Xna.Framework.Storage;
 using HexaTest.Help;
 using HexaTest.config;
 
+
 namespace HexaTest
 {
     /// <summary>
@@ -51,7 +52,7 @@ namespace HexaTest
             graphics.ApplyChanges();
             Window.Title = "Hexa";			
             base.Initialize();
-
+            Console.WriteLine(CalcLib.getNeighbor(1, 2));
             
         }
 
