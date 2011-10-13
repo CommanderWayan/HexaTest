@@ -53,7 +53,7 @@ namespace HexaTest.Playfield
                                         (new Point(_origin.X + _width / 3           , _origin.Y + _height)),
                                         (new Point(_origin.X                        , _origin.Y + _height / 2))};
         }
-
+        //TODO: Draw hier mit reinnehmen - damit lassen sich dann auch die nachbartexturen drüberlegen ;););)
         public void setTexture(Texture2D Texture)
         {
             this._texture = Texture;
