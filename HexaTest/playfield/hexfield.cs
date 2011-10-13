@@ -54,6 +54,10 @@ namespace HexaTest.Playfield
                                         (new Point(_origin.X                        , _origin.Y + _height / 2))};
         }
         //TODO: Draw hier mit reinnehmen - damit lassen sich dann auch die nachbartexturen drüberlegen ;););)
+		public void Draw(SpriteBatch spriteBatch)
+		{
+			spriteBatch.Draw(_texture, new Rectangle(_origin.X,_origin.Y,_width, _height),Color.White);
+		}
         public void setTexture(Texture2D Texture)
         {
             this._texture = Texture;

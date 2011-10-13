@@ -18,8 +18,8 @@ namespace HexaTest.Playfield
 {
     class Playfield
     {
-        public Hexfield[,] _playfield;
-        public int _height, _width;
+        Hexfield[,] _playfield;
+        int _height, _width;
         SortedDictionary<string, Texture2D> _textures;
         TextureManager _texMan;
         ContentManager _content;
@@ -56,6 +56,16 @@ namespace HexaTest.Playfield
             }
             blendNeighbors();
         }
+		public void Draw(SpriteBatch spriteBatch)
+		{
+			for (int y = 0; y < _playfield.GetUpperBound(0); y++)
+			{
+				for (int x = 0; x < _playfield.GetUpperBound(1); x++)
+				{
+					_playfield[y, x].Draw(spriteBatch);
+				}
+			}
+		}
         private void blendNeighbors()
         {
             for (int y = 0; y <= _playfield.GetUpperBound(0); y++)
@@ -72,27 +82,11 @@ namespace HexaTest.Playfield
                      * 4 x-1,   y+1
                      * 5 x-1,   y
                      * */
-                    /*
-                    //0                    
-                    if (y > 0)
-                        Console.WriteLine("N0 - " + _playfield[y - 1, x].getTexture.Name);
-                    //1
-                    if (x < _playfield.GetUpperBound(1))
-                        Console.WriteLine("N1 - " + _playfield[y, x + 1].getTexture.Name);
-                    //2
-                    if (x < _playfield.GetUpperBound(1) && y < _playfield.GetUpperBound(0))
-                        Console.WriteLine("N2 - " + _playfield[y + 1, x + 1].getTexture.Name);
-                    //3
-                    if (y < _playfield.GetUpperBound(0))
-                        Console.WriteLine("N3 - " + _playfield[y + 1, x].getTexture.Name);
-                    //4
-                    if (x > 0 && y < _playfield.GetUpperBound(0))
-                        Console.WriteLine("N4 - " + _playfield[y + 1, x - 1].getTexture.Name);
-                    //5
-                    if (x > 0)
-                        Console.WriteLine("N5 - " + _playfield[y, x - 1].getTexture.Name);
-                     * */
+                   
+                   
+                  
                 }
+				Console.WriteLine("---------------");
             }
         }
     }

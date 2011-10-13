@@ -110,14 +110,7 @@ namespace HexaTest
             GraphicsDevice.Clear(Color.Black);
 
             spriteBatch.Begin();
-
-            for (int y = 0; y <= playfield._playfield.GetUpperBound(0); y++)
-            {
-                for (int x = 0; x <= playfield._playfield.GetUpperBound(1); x++)
-                {
-                    spriteBatch.Draw(playfield._playfield[y,x].getTexture, new Rectangle(playfield._playfield[y,x].Origin.X, playfield._playfield[y,x].Origin.Y,Helpers.HexFieldWidth, Helpers.HexFieldHeight),Color.White);
-                }
-            }            
+			playfield.Draw(spriteBatch);              
             spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);            
             spriteBatch.End();
             // TODO: Add your drawing code here
