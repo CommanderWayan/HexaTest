@@ -18,9 +18,11 @@ namespace HexaTest.TextureManagement
 		public TextureManager(ContentManager Content)
 		{
 			_textures = Helpers.LoadContent<Texture2D>(Content, "terrain");
+            for (int i = 0; i < _textures.Count; i++)
+                _textures.ElementAt(i).Value.Name = _textures.ElementAt(i).Key;
 		}
 
-		public SortedDictionary<string, Texture2D> Textures
+        public SortedDictionary<string, Texture2D> Textures
 		{
 			get { return this._textures; }
 		}

@@ -22,12 +22,10 @@ namespace HexaTest
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        Texture2D cursorFrame;
-
         Texture2D cursorTexture;
         Vector2 cursorPosition;
 
-        Playfield.Playfield hexafield;
+        Playfield.Playfield playfield;
 
 		KeyboardState keyState;
 
@@ -68,7 +66,7 @@ namespace HexaTest
             cursorTexture = this.Content.Load<Texture2D>(@"cursor\cursor_normal");
             // TODO: use this.Content to load your game content here
 
-            hexafield = new HexaTest.Playfield.Playfield(21, 31, this.Content);
+            playfield = new HexaTest.Playfield.Playfield(5, 11, this.Content);
             //hexafield.setUniTextureTest(cursorFrame);
         }
 
@@ -94,7 +92,7 @@ namespace HexaTest
 			keyState = Keyboard.GetState();
 			if(keyState.IsKeyDown(Keys.F5))
 			{
-				hexafield = new HexaTest.Playfield.Playfield(21, 31, this.Content);
+				playfield = new HexaTest.Playfield.Playfield(5, 11, this.Content);
 			}
             // TODO: Add your update logic here
             cursorPosition.X = Mouse.GetState().X;
@@ -109,15 +107,15 @@ namespace HexaTest
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.Black);
 
             spriteBatch.Begin();
 
-            for (int y = 0; y <= hexafield._playfield.GetUpperBound(0); y++)
+            for (int y = 0; y <= playfield._playfield.GetUpperBound(0); y++)
             {
-                for (int x = 0; x <= hexafield._playfield.GetUpperBound(1); x++)
+                for (int x = 0; x <= playfield._playfield.GetUpperBound(1); x++)
                 {
-                    spriteBatch.Draw(hexafield._playfield[y,x].getTexture, new Rectangle(hexafield._playfield[y,x].Origin.X, hexafield._playfield[y,x].Origin.Y,Helpers.HexFieldWidth, Helpers.HexFieldHeight),Color.White);
+                    spriteBatch.Draw(playfield._playfield[y,x].getTexture, new Rectangle(playfield._playfield[y,x].Origin.X, playfield._playfield[y,x].Origin.Y,Helpers.HexFieldWidth, Helpers.HexFieldHeight),Color.White);
                 }
             }            
             spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);            

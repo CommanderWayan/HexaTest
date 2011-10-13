@@ -36,9 +36,9 @@ namespace HexaTest.Help
 			foreach (FileInfo file in files)
 			{
 				string key = Path.GetFileNameWithoutExtension(file.Name);
-
 				result[key] = contentManager.Load<T>(contentFolder + "\\" + key);
-			}
+                
+            }
 
 			//Return the result
 			return result;
