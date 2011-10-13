@@ -31,7 +31,7 @@ namespace HexaTest.Playfield
             this._playfield = new Hexfield[_height, _width];
             this._content = Content;
             this._texMan = new TextureManager(Content);
-            this._textures = _texMan.Textures;
+            this._textures = _texMan.TexturesTerrain;
 
             int counter = 0;
             Random rnd = new Random();
