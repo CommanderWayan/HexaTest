@@ -25,6 +25,7 @@ namespace HexaTest
         SpriteBatch spriteBatch;
         Texture2D cursorTexture;
         Vector2 cursorPosition;
+        Effect effectTest;
 
         Playfield.Playfield playfield;
 
@@ -61,7 +62,8 @@ namespace HexaTest
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);           
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+            effectTest = Content.Load<Effect>(@"pixelshaders\AlphaMap");
             cursorTexture = this.Content.Load<Texture2D>(@"cursor\cursor_normal");
             // TODO: use this.Content to load your game content here
 
@@ -108,9 +110,10 @@ namespace HexaTest
         {
             GraphicsDevice.Clear(Color.Black);
 
-            spriteBatch.Begin();
-			playfield.Draw(spriteBatch);              
-            spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);            
+            spriteBatch.Begin();            
+			playfield.Draw(spriteBatch);            
+            effectTest.CurrentTechnique.Passes["pass0"].Apply();
+            spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);               
             spriteBatch.End();
             // TODO: Add your drawing code here
 
