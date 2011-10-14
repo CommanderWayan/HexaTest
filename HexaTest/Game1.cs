@@ -109,10 +109,12 @@ namespace HexaTest
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
+            effectTest.CurrentTechnique = effectTest.Techniques["LangweiligerShader"];
 
-            spriteBatch.Begin();            
-			playfield.Draw(spriteBatch);            
+            spriteBatch.Begin(SpriteSortMode.Immediate,BlendState.NonPremultiplied);
             effectTest.CurrentTechnique.Passes["pass0"].Apply();
+			playfield.Draw(spriteBatch);            
+            
             spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);               
             spriteBatch.End();
             // TODO: Add your drawing code here

@@ -3,16 +3,12 @@ float4x4 View;
 float4x4 Projection;
 
 // TODO: add effect parameters here.
+sampler firstSampler;
+float2 targetSize; 
 
-float4 PS_COLOR() : COLOR
+float4 PS_COLOR(float2 texCoord: TEXCOORD0) : COLOR
 {
-	float4 color = 1.0f;
-
-	color.r = 0.5f;
-	color.g = 0.2f;
-	color.b = 0.1f;
-	color.a = 0.8f;
-	
+	float4 color = tex2D(firstSampler, texCoord);
 	return color;
 }
 
