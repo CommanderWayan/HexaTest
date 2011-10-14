@@ -51,9 +51,7 @@ namespace HexaTest
             graphics.IsFullScreen = false;
             graphics.ApplyChanges();
             Window.Title = "Hexa";			
-            base.Initialize();
-            Console.WriteLine(CalcLib.getNeighbor(1, 2));
-            
+            base.Initialize();            
         }
 
         /// <summary>

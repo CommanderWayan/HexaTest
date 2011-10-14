@@ -56,6 +56,7 @@ namespace HexaTest.Playfield
             }
             blendNeighbors();
         }
+
 		public void Draw(SpriteBatch spriteBatch)
 		{
 			for (int y = 0; y < _playfield.GetUpperBound(0); y++)
@@ -66,6 +67,7 @@ namespace HexaTest.Playfield
 				}
 			}
 		}
+
         private void blendNeighbors()
         {
             for (int y = 0; y <= _playfield.GetUpperBound(0); y++)
@@ -88,6 +90,11 @@ namespace HexaTest.Playfield
                 }
 				Console.WriteLine("---------------");
             }
+        }
+
+        public static Point tupleToPoint(Tuple<int, int> tup)
+        {
+            return new Point(tup.Item1, tup.Item2);
         }
     }
 }
