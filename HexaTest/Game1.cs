@@ -51,7 +51,7 @@ namespace HexaTest
             graphics.IsFullScreen = false;
             graphics.ApplyChanges();
             Window.Title = "Hexa";			
-            base.Initialize();            
+            base.Initialize();
         }
 
         /// <summary>

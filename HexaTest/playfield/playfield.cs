@@ -91,10 +91,5 @@ namespace HexaTest.Playfield
 				Console.WriteLine("---------------");
             }
         }
-
-        public static Point tupleToPoint(Tuple<int, int> tup)
-        {
-            return new Point(tup.Item1, tup.Item2);
-        }
     }
 }
