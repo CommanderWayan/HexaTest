@@ -10,5 +10,5 @@ let tupleAdd a b = (fun (x,y) -> (a+x,b+y))
 let getNeighbor x y = 
     (if ((x % 2) = 0) then evenList else oddList)
     |> Array.map (tupleAdd x y)
-    |> Array.map (fun (x,y) -> Microsoft.Xna.Framework.Point(x,y)) 
+    |> Array.map (fun (x,y) -> Microsoft.Xna.Framework.Point(x,y))
 

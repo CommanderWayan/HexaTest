@@ -183,6 +183,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CalcLib\CalcLib.fsproj">
+      <Project>{C5975495-7ACB-49AD-9DEC-4031D4AC5BE5}</Project>
+      <Name>CalcLib</Name>
+    </ProjectReference>
     <ProjectReference Include="Content\HexaTestContent.contentproj">
       <Project>{9A72113C-05D5-4015-9E32-90A3945E305D}</Project>
       <Name>HexaTestContent %28Content%29</Name>

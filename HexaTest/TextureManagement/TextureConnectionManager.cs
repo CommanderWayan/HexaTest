@@ -22,6 +22,10 @@ namespace HexaTest.TextureManagement
 
         public void addTexture(string name)
         {
+            if (dictionary.ContainsKey(name))
+            {
+                throw new ArgumentException("Texture " + name + " already exists", "name");
+            }
             List<string> tmpList = new List<string>();
             dictionary.Add(name, tmpList);
         }
@@ -32,7 +36,11 @@ namespace HexaTest.TextureManagement
             List<string> tmpList;
             if (!dictionary.ContainsKey(texture))
             {
-                addTexture(texture);
+                throw new ArgumentException("Texture " + texture + " does not exists", "texture");
+            }
+            if (!dictionary.ContainsKey(connection))
+            {
+                throw new ArgumentException("Texture " + connection + " does not exists", "connection");
             }
             dictionary.TryGetValue(texture, out tmpList);
             tmpList.Add(connection);
@@ -43,8 +51,9 @@ namespace HexaTest.TextureManagement
             List<string> tmpList = null;
             if (!dictionary.ContainsKey(texture))
             {
-                dictionary.TryGetValue(texture, out tmpList);
+                throw new ArgumentException("Texture " + texture + " does not exists", "texture");
             }
+            dictionary.TryGetValue(texture, out tmpList);
             return tmpList;
         }
 
