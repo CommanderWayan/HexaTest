@@ -38,20 +38,24 @@ namespace HexaTest.Playfield
         int _width = Help.Helpers.HexFieldWidth;
         Point[] _coordinates;
 		int _heightlevel = 1;
-        Hexfield[] _neighbours;
+        Point[] _neighbours;
+		Point _arrayIndex;
 
-        public Hexfield(Point Origin, int Index, Texture2D Texture)
+        public Hexfield(Point Origin, int Index, Texture2D Texture, int ArrayX, int ArrayY)
         {
             this._origin = Origin;
             this._center = new Point(this._origin.X + _width / 2, this._origin.Y + _height / 2);
             this._index = Index;
 			this._texture = Texture;
-            _coordinates = new Point[]  {(new Point(_origin.X + _width / 3          , _origin.Y)),
-                                        (new Point(_origin.X + (int)(_width / 1.5)  , _origin.Y)),
-                                        (new Point(_origin.X + _width               , _origin.Y + _height / 2)),
-                                        (new Point(_origin.X + (int)(_width / 1.5)  , _origin.Y + _height)),
-                                        (new Point(_origin.X + _width / 3           , _origin.Y + _height)),
-                                        (new Point(_origin.X                        , _origin.Y + _height / 2))};
+            _coordinates = new Point[]  {(new Point(_origin.X + _width / 4						, _origin.Y)),
+                                        (new Point(_origin.X + (int)(_width * (3.0/4.0))	, _origin.Y)),
+                                        (new Point(_origin.X + _width							, _origin.Y + _height / 2)),
+                                        (new Point(_origin.X + (int)(_width * (3.0/4.0))	, _origin.Y + _height)),
+                                        (new Point(_origin.X + _width / 4						, _origin.Y + _height)),
+                                        (new Point(_origin.X									, _origin.Y + _height / 2))};
+			_arrayIndex = new Point(ArrayX, ArrayY);
+			_neighbours = CalcLib.getNeighbors(ArrayX, ArrayY);
+
         }        
 		public void Draw(SpriteBatch spriteBatch)
 		{

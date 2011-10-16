@@ -113,7 +113,6 @@ namespace HexaTest
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
-
             // TODO: Add your drawing code here
 
             switch (this.gameStateManager.GameState)

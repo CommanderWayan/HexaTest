@@ -42,15 +42,15 @@ namespace HexaTest.Playfield
                 {
                     if ((x % 2) == 0) // gerade
                     {
-                        _playfield[y, x] = new Hexfield(new Point((int)((2 * Help.Helpers.HexFieldWidth) / 3) * x,
+                        _playfield[y, x] = new Hexfield(new Point((int)((Help.Helpers.HexFieldWidth) * (3.0/4.0)) * x,
                                                                  (Help.Helpers.HexFieldHeight) * y),
-                                                                  counter, _textures.ElementAt(rnd.Next(0, _textures.Count)).Value);
+                                                                  counter, _textures.ElementAt(rnd.Next(0, _textures.Count)).Value,x,y);
                     }
                     else
                     {
-                        _playfield[y, x] = new Hexfield(new Point((int)((2 * Help.Helpers.HexFieldWidth) / 3) * x,
+                        _playfield[y, x] = new Hexfield(new Point((int)((Help.Helpers.HexFieldWidth) * (3.0/4.0)) * x,
                                                                  (Help.Helpers.HexFieldHeight * y + Help.Helpers.HexFieldHeight / 2)),
-                                                                  counter, _textures.ElementAt(rnd.Next(0, _textures.Count)).Value);
+                                                                  counter, _textures.ElementAt(rnd.Next(0, _textures.Count)).Value,x,y);
                     }
                 }
             }

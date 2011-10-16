@@ -58,8 +58,8 @@ namespace HexaTest.Help
 			SW,
 			NW
 		}
-		public const int HexFieldWidth = 60;
-		public const int HexFieldHeight = 60;
+		public const int HexFieldWidth = 80;
+		public const int HexFieldHeight = 70;
 	}
 
 

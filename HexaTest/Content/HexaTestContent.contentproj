@@ -103,6 +103,13 @@
     <Folder Include="config\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="pixelshaders\AlphaMap.fx">
+      <Name>AlphaMap</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="terrain\dirt.png">
       <Name>dirt</Name>
       <Importer>TextureImporter</Importer>
@@ -118,28 +125,18 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="terrain\grass_dark_stone.png">
-      <Name>grass_dark_stone</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="terrain\grass_light.png">
       <Name>grass_light</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="terrain\grass_light_stone.png">
-      <Name>grass_light_stone</Name>
+    <Compile Include="terrain\gravel.png">
+      <Name>gravel</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
     <Compile Include="terrain\sand.png">
       <Name>sand</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
-    <Compile Include="terrain\stone.png">
-      <Name>stone</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
@@ -150,10 +147,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="pixelshaders\AlphaMap.fx">
-      <Name>AlphaMap</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
+    <Compile Include="terrain-masks\maske1.png">
+      <Name>maske1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
