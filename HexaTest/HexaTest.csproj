@@ -119,6 +119,11 @@
     <Compile Include="config\Config.cs" />
     <Compile Include="entities\Unit.cs" />
     <Compile Include="entities\Weapon.cs" />
+    <Compile Include="GameStateManagement\GameState.cs" />
+    <Compile Include="GameStateManagement\GameStateManager.cs" />
+    <Compile Include="GameStateManagement\IGameState.cs" />
+    <Compile Include="GameStateManagement\IntroState.cs" />
+    <Compile Include="GameStateManagement\MenueState.cs" />
     <Compile Include="helpers.cs" />
     <Compile Include="playfield\hexfield.cs" />
     <Compile Include="playfield\playfield.cs" />

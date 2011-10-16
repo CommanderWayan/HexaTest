@@ -12,6 +12,7 @@ using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
 using HexaTest.Help;
 using HexaTest.config;
+using HexaTest.GameStateManagement;
 
 
 namespace HexaTest
@@ -21,20 +22,15 @@ namespace HexaTest
     /// </summary>
     public class Game1 : Microsoft.Xna.Framework.Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
-        Texture2D cursorTexture;
-        Vector2 cursorPosition;
-        Effect effectTest;
 
-        Playfield.Playfield playfield;
-
-		KeyboardState keyState;
+        GameStateManager gameStateManager = null;
 
         public Game1()
         {
-            graphics = new GraphicsDeviceManager(this);
-            Content.RootDirectory = "Content";            
+            Content.RootDirectory = "Content";
+            gameStateManager = new GameStateManager(this);
+            this.gameStateManager.GameState = EGameState.Game;
+            
         }
 
         /// <summary>
@@ -46,12 +42,7 @@ namespace HexaTest
         protected override void Initialize()
         {
             Config.checkAndCreate();
-            // TODO: Add your initialization logic here
-            graphics.PreferredBackBufferWidth = 1024;
-            graphics.PreferredBackBufferHeight = 768;
-            graphics.IsFullScreen = false;
-            graphics.ApplyChanges();
-            Window.Title = "Hexa";			
+            // TODO: Add your initialization logic here			
             base.Initialize();
         }
 
@@ -62,13 +53,6 @@ namespace HexaTest
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-            effectTest = Content.Load<Effect>(@"pixelshaders\AlphaMap");
-            cursorTexture = this.Content.Load<Texture2D>(@"cursor\cursor_normal");
-            // TODO: use this.Content to load your game content here
-
-            playfield = new HexaTest.Playfield.Playfield(5, 11, this.Content);
-            //hexafield.setUniTextureTest(cursorFrame);
         }
 
         /// <summary>
@@ -90,14 +74,34 @@ namespace HexaTest
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-			keyState = Keyboard.GetState();
-			if(keyState.IsKeyDown(Keys.F5))
-			{
-				playfield = new HexaTest.Playfield.Playfield(5, 11, this.Content);
-			}
-            // TODO: Add your update logic here
-            cursorPosition.X = Mouse.GetState().X;
-            cursorPosition.Y = Mouse.GetState().Y;
+
+            EGameState ret;
+            switch (this.gameStateManager.GameState)
+            {
+            case EGameState.Nothing:
+                break;
+            case EGameState.Intro:
+                ret = this.gameStateManager.Intro.Update(gameTime);
+                if (ret != EGameState.Intro)
+                {
+                    this.gameStateManager.GameState = ret;
+                }
+                break;
+            case EGameState.Menue:
+                ret = this.gameStateManager.Menue.Update(gameTime);
+                if (ret != EGameState.Menue)
+                {
+                    this.gameStateManager.GameState = ret;
+                }
+                break;
+            case EGameState.Game:
+                ret = this.gameStateManager.Game.Update(gameTime);
+                if (ret != EGameState.Game)
+                {
+                    this.gameStateManager.GameState = ret;
+                }
+                break;
+            }
 
             base.Update(gameTime);
         }
@@ -109,15 +113,23 @@ namespace HexaTest
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
-            effectTest.CurrentTechnique = effectTest.Techniques["LangweiligerShader"];
 
-            spriteBatch.Begin(SpriteSortMode.Immediate,BlendState.NonPremultiplied);
-            effectTest.CurrentTechnique.Passes["pass0"].Apply();
-			playfield.Draw(spriteBatch);            
-            
-            spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);               
-            spriteBatch.End();
             // TODO: Add your drawing code here
+
+            switch (this.gameStateManager.GameState)
+            {
+                case EGameState.Nothing:
+                    break;
+                case EGameState.Intro:
+                    this.gameStateManager.Intro.Draw(gameTime);
+                    break;
+                case EGameState.Menue:
+                    this.gameStateManager.Menue.Draw(gameTime);
+                    break;
+                case EGameState.Game:
+                    this.gameStateManager.Game.Draw(gameTime);
+                    break;
+            }
 
             base.Draw(gameTime);
         }
