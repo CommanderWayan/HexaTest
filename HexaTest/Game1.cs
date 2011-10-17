@@ -24,11 +24,10 @@ namespace HexaTest
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Texture2D cursorTexture;
-        Vector2 cursorPosition;
-        Effect effectTest;
+        Vector2 cursorPosition;      
 
         Playfield.Playfield playfield;
-
+		Effect AlphaBlend;
 		KeyboardState keyState;
 
         public Game1()
@@ -62,13 +61,11 @@ namespace HexaTest
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-            effectTest = Content.Load<Effect>(@"pixelshaders\AlphaMap");
+            spriteBatch = new SpriteBatch(GraphicsDevice);            
             cursorTexture = this.Content.Load<Texture2D>(@"cursor\cursor_normal");
-            // TODO: use this.Content to load your game content here
-
+			AlphaBlend = Content.Load<Effect>(@"pixelshaders\AlphaBlend");
             playfield = new HexaTest.Playfield.Playfield(5, 11, this.Content);
-            //hexafield.setUniTextureTest(cursorFrame);
+            
         }
 
         /// <summary>
@@ -109,15 +106,13 @@ namespace HexaTest
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.Black);
-            effectTest.CurrentTechnique = effectTest.Techniques["Vicky"];
-
-            spriteBatch.Begin(SpriteSortMode.Immediate,BlendState.NonPremultiplied);
-			
+			//spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied);			
             //effectTest.CurrentTechnique.Passes["P0"].Apply();
-			playfield.Draw(spriteBatch);            
-            
-            spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);               
-            spriteBatch.End();
+			playfield.Draw(spriteBatch, AlphaBlend, GraphicsDevice);
+			spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied);			        
+            spriteBatch.Draw(cursorTexture, cursorPosition, Color.White);
+			spriteBatch.End();
+            //spriteBatch.End();
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);

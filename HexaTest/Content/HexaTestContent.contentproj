@@ -103,8 +103,8 @@
     <Folder Include="config\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="pixelshaders\AlphaMap.fx">
-      <Name>AlphaMap</Name>
+    <Compile Include="pixelshaders\AlphaBlend.fx">
+      <Name>AlphaBlend</Name>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
     </Compile>
