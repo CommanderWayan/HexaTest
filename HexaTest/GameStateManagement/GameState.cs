@@ -6,16 +6,16 @@ namespace HexaTest.GameStateManagement
 {
     class GameState : IGameState
     {
-        Game1 parent = null;
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
-        Texture2D cursorTexture;
-        Vector2 cursorPosition;
-        Effect effectTest;
+        private Game1 parent = null;
+        private GraphicsDeviceManager graphics;
+        private SpriteBatch spriteBatch;
+        private Texture2D cursorTexture;
+        private Vector2 cursorPosition;
+        private Effect effectTest;
 
-        Playfield.Playfield playfield;
+        private Playfield.Playfield playfield;
 
-        KeyboardState keyState;
+        private KeyboardState keyState;
 
         public GameState(Game1 parent)
         {
@@ -37,6 +37,7 @@ namespace HexaTest.GameStateManagement
 
             playfield = new HexaTest.Playfield.Playfield(5, 11, parent.Content);
             //hexafield.setUniTextureTest(cursorFrame);
+            effectTest.CurrentTechnique = effectTest.Techniques["Vicky"];
         }
 
         public EGameState Update(GameTime gameTime)
