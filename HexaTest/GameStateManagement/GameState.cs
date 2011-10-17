@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace HexaTest.GameStateManagement
 {
@@ -37,7 +38,6 @@ namespace HexaTest.GameStateManagement
 
             playfield = new HexaTest.Playfield.Playfield(5, 11, parent.Content);
             //hexafield.setUniTextureTest(cursorFrame);
-            effectTest.CurrentTechnique = effectTest.Techniques["Vicky"];
         }
 
         public EGameState Update(GameTime gameTime)
@@ -55,7 +55,13 @@ namespace HexaTest.GameStateManagement
 
         public void Draw(GameTime gameTime)
         {
+            if (effectTest.IsDisposed)
+            {
+                Console.Write("ok?");
+            }
+
             effectTest.CurrentTechnique = effectTest.Techniques["Vicky"];
+
 
             spriteBatch.Begin(SpriteSortMode.Immediate,BlendState.NonPremultiplied);
 			
