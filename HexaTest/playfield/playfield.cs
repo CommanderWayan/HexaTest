@@ -93,6 +93,7 @@ namespace HexaTest.Playfield
 						else
 						{
 							_playfield[y, x].setEdgeTexture(i, _playfield[tempCoord.Y, tempCoord.X].Texture);
+							_playfield[y,x].setNeighbor (i, _playfield[tempCoord.Y, tempCoord.X]);
 						}
 					}
 				}

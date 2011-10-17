@@ -39,7 +39,7 @@ namespace HexaTest.Playfield
         Point[] _coordinates;
 		int _heightlevel = 1;
         Point[] _neighborCoordinates;
-		Hexfield[] _neigbors;
+		Hexfield[] _neigbors = new Hexfield[6];
 		Point _playfieldCoordinate;
 		Texture2D[] _edgeTextures = new Texture2D[6];
 		Texture2D _blendTexture;
@@ -134,6 +134,17 @@ namespace HexaTest.Playfield
 			else
 			{
 				_edgeTextures[Edge] = EdgeTexture;
+			}
+		}
+		public void setNeighbor(int NeighborIndex, Hexfield Neighbor)
+		{
+			if (NeighborIndex > 5)
+			{
+				throw (new IndexOutOfRangeException("NeighborIndex kann nur 0..5 sein!"));
+			}
+			else
+			{
+				_neigbors[NeighborIndex] = Neighbor;
 			}
 		}
     }
