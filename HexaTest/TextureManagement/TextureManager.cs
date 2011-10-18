@@ -16,6 +16,7 @@ namespace HexaTest.TextureManagement
 	{
 		SortedDictionary<string, Texture2D> _texturesTerrain;
 		SortedDictionary<string, Texture2D> _texturesTerrainMasks;
+
 		SortedDictionary<string, int> _priorityTerrain;
 
 		public TextureManager(ContentManager Content)
@@ -28,7 +29,7 @@ namespace HexaTest.TextureManagement
 			{
 				_texturesTerrain.ElementAt(i).Value.Name = _texturesTerrain.ElementAt(i).Key;
 				//TODO: Priorität implementieren!!!
-				_priorityTerrain.Add(_texturesTerrain.ElementAt(i).Key, 0);
+				_priorityTerrain.Add(_texturesTerrain.ElementAt(i).Key, new Random().Next(0,_texturesTerrain.Count));
 			}
 			for (int i = 0; i < _texturesTerrainMasks.Count; i++)
 			{
@@ -43,6 +44,10 @@ namespace HexaTest.TextureManagement
 		public SortedDictionary<string, Texture2D> TexturesTerrainMasks
 		{
 			get { return this._texturesTerrainMasks; }
+		}
+		public SortedDictionary<string, int> PriorityTerrain
+		{
+			get { return this._priorityTerrain; }
 		}
 	}
 }

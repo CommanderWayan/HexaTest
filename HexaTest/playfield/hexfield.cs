@@ -32,8 +32,7 @@ namespace HexaTest.Playfield
     {
         int _index;
         Point _origin;
-        Point _center;
-        Texture2D _texture;
+        Point _center;        
         int _height = Help.Helpers.HexFieldHeight;
         int _width = Help.Helpers.HexFieldWidth;
         Point[] _coordinates;
@@ -41,11 +40,15 @@ namespace HexaTest.Playfield
         Point[] _neighborCoordinates;
 		Hexfield[] _neigbors = new Hexfield[6];
 		Point _playfieldCoordinate;
+
+		Texture2D _texture;
 		Texture2D[] _edgeTextures = new Texture2D[6];
 		Texture2D _blendTexture;
+		int _priority;
 
-        public Hexfield(Point Origin, int Index, Texture2D Texture,Texture2D BlendTexture, int ArrayX, int ArrayY)
+        public Hexfield(Point Origin, int Index, Texture2D Texture,Texture2D BlendTexture, int ArrayX, int ArrayY, int Priority)
         {
+			this._priority = Priority;
             this._origin = Origin;
             this._center = new Point(this._origin.X + _width / 2, this._origin.Y + _height / 2);
             this._index = Index;
@@ -66,30 +69,37 @@ namespace HexaTest.Playfield
 			spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied);			
 			spriteBatch.Draw(_texture, new Rectangle(_origin.X,_origin.Y,_width, _height),Color.White);
 			spriteBatch.End();
+
+			
 			//jetzt edge texturen malen - wenn denn die eigene priorität niedriger ist
+			Vector2 pivot;
+			float angle = (float)(Math.PI * 60 / 180.0);	
+
 			for (int i = 0; i < _edgeTextures.Length; i++)
 			{
 				if (_edgeTextures[i] != null)
 				{
+					if (_neigbors[i].Priority > this._priority)
+					{
+						spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied);			
+						GraphicsDevice.Textures[1] = _blendTexture;
+						GraphicsDevice.SamplerStates[1] = SamplerState.LinearClamp;
+						AlphaBlendEffect.CurrentTechnique = AlphaBlendEffect.Techniques["AlphaBlend"];
+						AlphaBlendEffect.CurrentTechnique.Passes["pass0"].Apply();
 
-					spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied);			
-					GraphicsDevice.Textures[1] = _blendTexture;
-					GraphicsDevice.SamplerStates[1] = SamplerState.LinearClamp;
-					AlphaBlendEffect.CurrentTechnique = AlphaBlendEffect.Techniques["AlphaBlend"];
-					AlphaBlendEffect.CurrentTechnique.Passes["pass0"].Apply();					
-					//spriteBatch.Draw(_edgeTextures[i], new Rectangle(_origin.X, _origin.Y, _width, _height), Color.White);
-					Vector2 pivot = new Vector2(_edgeTextures[i].Bounds.Center.X, _edgeTextures[i].Bounds.Center.Y);
-					float angle = (float)(Math.PI * 60 *i / 180.0);					
-					spriteBatch.Draw(_edgeTextures[i],
-									new Rectangle(_origin.X+40, _origin.Y+35, _width, _height),
-									null,
-									Color.White,
-									angle,
-									pivot,
-									SpriteEffects.None,
-									0f);
-							
-					spriteBatch.End();
+						pivot = new Vector2(_edgeTextures[i].Bounds.Center.X, _edgeTextures[i].Bounds.Center.Y);
+						
+						spriteBatch.Draw(_edgeTextures[i],
+										new Rectangle(_origin.X + 40, _origin.Y + 35, _width, _height),
+										null,
+										Color.White,
+										angle * i,
+										pivot,
+										SpriteEffects.None,
+										0f);
+
+						spriteBatch.End();
+					}
 					
 					
 				}
@@ -105,6 +115,10 @@ namespace HexaTest.Playfield
         {
             get { return this._texture; }
         }
+		public int Priority
+		{
+			get { return this._priority; }
+		}
 		public Point Origin
 		{
 			get{return this._origin;}

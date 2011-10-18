@@ -43,23 +43,26 @@ namespace HexaTest.Playfield
             {
                 for (int x = 0; x <= _playfield.GetUpperBound(1); x++, counter++)
                 {
+					int rnTexElement = rnd.Next(0, _textures.Count);
+					int tnMaskElement = rnd.Next(0, _texturesMasks.Count);
+					int prioTemp = _texMan.PriorityTerrain[_textures.ElementAt(rnTexElement).Key];
                     if ((x % 2) == 0) // gerade
                     {
                         _playfield[y, x] = new Hexfield(new Point((int)((Help.Helpers.HexFieldWidth) * (3.0/4.0)) * x,
                                                                  (Help.Helpers.HexFieldHeight) * y),
                                                                   counter,
-																  _textures.ElementAt(rnd.Next(0, _textures.Count)).Value,
-																  _texturesMasks.ElementAt(rnd.Next(0, _texturesMasks.Count)).Value,
-																  x,y);
+																  _textures.ElementAt(rnTexElement).Value,
+																  _texturesMasks.ElementAt(tnMaskElement).Value,
+																  x,y, prioTemp);
                     }
                     else
                     {
                         _playfield[y, x] = new Hexfield(new Point((int)((Help.Helpers.HexFieldWidth) * (3.0/4.0)) * x,
                                                                  (Help.Helpers.HexFieldHeight * y + Help.Helpers.HexFieldHeight / 2)),
                                                                   counter,
-																  _textures.ElementAt(rnd.Next(0, _textures.Count)).Value,
-																  _texturesMasks.ElementAt(rnd.Next(0, _texturesMasks.Count)).Value,
-																  x,y);
+																  _textures.ElementAt(rnTexElement).Value,
+																  _texturesMasks.ElementAt(tnMaskElement).Value,
+																  x,y, prioTemp);
                     }
                 }
             }
